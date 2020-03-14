@@ -1,0 +1,25 @@
+﻿<Window x:Class="WPFRegisterStudent.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFRegisterStudent"
+        mc:Ignorable="d"
+        Title="WPF Register Student - Ryan Hutton" Height="395.902" Width="525" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="136*"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="229*"/>
+        </Grid.RowDefinitions>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="66,37,0,0" VerticalAlignment="Top" Width="164" IsDropDownOpen="True" SelectionChanged="comboBox_SelectionChanged"/>
+        <Button x:Name="button" Content="Register for this course" HorizontalAlignment="Left" Margin="283,39,0,0" VerticalAlignment="Top" Width="166" Click="button_Click"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="69" Margin="66,140,0,0" VerticalAlignment="Top" Width="164" SelectionChanged="listBox_SelectionChanged" Grid.Row="1" Grid.RowSpan="2"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="283,140,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="73" IsReadOnly="True" TextChanged="textBox_TextChanged" Grid.Row="1" Grid.RowSpan="2"/>
+        <Label x:Name="label" Content="Please select a course for which you want to register" HorizontalAlignment="Left" Margin="66,7,0,0" VerticalAlignment="Top" Width="383"/>
+        <Label x:Name="label1" Content="You are currently registered for:" HorizontalAlignment="Left" Margin="66,109,0,0" VerticalAlignment="Top" Width="176" Grid.Row="1" Grid.RowSpan="2"/>
+        <Label x:Name="label2" Content="Total Credit Hours" HorizontalAlignment="Left" Margin="283,109,0,0" VerticalAlignment="Top" Width="106" Grid.Row="1" Grid.RowSpan="2"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="31,10,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="463" FontSize="14" Foreground="Red" TextAlignment="Center"/>
+
+    </Grid>
+</Window>
